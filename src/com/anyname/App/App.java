@@ -54,10 +54,10 @@ public class App {
         c.addMessage(m1);
         c.addMessage(m2);
 
-        System.out.println("Chat Users:");
+        System.out.println("\n-> Chat Users:");
         c.getUsers().forEach(u -> System.out.println(u.getName()));
 
-        System.out.println("Chat Contents:");
+        System.out.println("\n-> Chat Contents:");
         c.getMessages().forEach(m -> System.out.println(m.getContent()));
     }
 }
