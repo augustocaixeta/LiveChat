@@ -35,7 +35,7 @@ public class App {
         Message m2 = new Message(
                 2,
                 "Salve (Para: AUGUSTO)",
-                u1,
+                u2,
                 LocalDateTime.of(2025, 4, 16, 11, 0, 0));
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
