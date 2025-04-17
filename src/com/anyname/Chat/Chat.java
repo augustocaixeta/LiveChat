@@ -4,21 +4,21 @@ import com.anyname.Message.Message;
 import com.anyname.User.User;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Chat {
     private int id;
     private String name;
     private String type;
-    private List<User> users;
-    private List<Message> messages;
+    private List<User> users = new ArrayList<>();
+    private List<Message> messages = new ArrayList<>();
     private LocalDateTime createdAt = LocalDateTime.now();
 
-    public Chat(int id, String name, String type, LocalDateTime createdAt) {
+    public Chat(int id, String name, String type) {
         this.id = id;
         this.name = name;
         this.type = type;
-        this.createdAt = createdAt;
     }
 
     public void addUser(User user) {
